@@ -2,11 +2,9 @@ from typing import Optional
 from typing import List
 
 import numpy as np
-import fitz
 import base64
 from base64 import b64decode
-import sys, os, cv2, io
-from cv2 import *
+import sys, os, io
 from PIL import Image
 import pandas as pd
 from pyzbar.pyzbar import decode
