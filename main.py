@@ -1,12 +1,13 @@
 from typing import Optional
 from typing import List
 
-import numpy as np
 import base64
 from base64 import b64decode
 import sys, os, io
+import json
 from PIL import Image
 import pandas as pd
+import numpy as np
 from pyzbar.pyzbar import decode
 
 from fastapi import FastAPI, Form, File, UploadFile
@@ -15,8 +16,6 @@ from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 from pydantic import BaseModel
-import json
-import io
 
 app = FastAPI()
 
